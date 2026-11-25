@@ -9,7 +9,7 @@ export default function Footer() {
         <div><Image src="/logo.png" alt="Quality Enterprises logo" width={90} height={63} className="h-12 w-auto" />
           <p className="mt-3 text-sm text-slate-300">Multi-colour powder coating work, Bhosari MIDC, Pune.</p></div>
         <ul className="space-y-2 text-sm text-slate-300">
-          {[["Home", "/"], ["About", "/about"], ["Services", "/services"], ["Our Work", "/work"], ["Contact", "/contact"]].map(([l, h]) => <li key={h}><Link className="hover:text-teal" href={h}>{l}</Link></li>)}
+          {[["Home", "/"], ["About Us", "/about"], ["Services", "/services"], ["Work / Products", "/work"], ["Gallery", "/gallery"], ["Contact Us", "/contact"]].map(([l, h]) => <li key={h}><Link className="hover:text-teal" href={h}>{l}</Link></li>)}
         </ul>
         <address className="space-y-2 text-sm not-italic text-slate-300">
           <p className="flex gap-2"><MapPin size={16} className="mt-1 shrink-0 text-teal" /><a className="hover:text-teal" href={site.mapsUrl} target="_blank" rel="noopener noreferrer">{site.address}</a></p>

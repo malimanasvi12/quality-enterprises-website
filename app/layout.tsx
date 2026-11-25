@@ -3,6 +3,7 @@ import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import Providers from "@/components/Providers";
 import { site } from "@/lib/site";
 const display = Sora({ subsets: ["latin"], variable: "--font-display" });
@@ -18,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body className="font-sans">
-        <Providers><Navbar /><main>{children}</main><Footer /></Providers>
+        <Providers><Navbar /><main>{children}</main><Footer /><WhatsAppButton /></Providers>
       </body>
     </html>
   );
