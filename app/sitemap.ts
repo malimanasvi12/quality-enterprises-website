@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ["", "/about", "/services", "/work", "/gallery", "/contact"].map(p => ({ url: site.url + p, lastModified: new Date() }));
+  return ["", "/about", "/services", "/work", "/contact"].map(p => ({ url: site.url + p, lastModified: new Date() }));
 }

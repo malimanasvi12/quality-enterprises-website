@@ -37,11 +37,3 @@ git push -u origin main
 
 ## Third-party services needed
 Resend (email), Vercel (hosting), GitHub (code). Google Fonts load at build time.
-
-## Gallery photos
-Put your four work photos in `public/images/gallery/` with these exact names: `yellow-components.jpg`, `red-components.jpg`, `orange-components.jpg`, `green-components.jpg`.
-Photos that are present appear automatically on the Home, Work and Gallery pages; missing ones are skipped (no broken images).
-WhatsApp number and message are set in `lib/site.ts`.
-
-## Vercel root directory
-`package.json` and the `app` folder must be at the TOP of the GitHub repo. In Vercel > Settings > General > Root Directory, leave it empty (or `./`).

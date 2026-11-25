@@ -12,8 +12,8 @@ export const site = {
     { name: "Mahesh Mali", phone: "9881897940" },
     { name: "Barun Mandal", phone: "8983968472" },
   ],
-  
-  whatsapp: "919881897940", // official business WhatsApp, supplied by owner
+  // Leave empty until the official WhatsApp number is confirmed (digits with country code, e.g. 91XXXXXXXXXX).
+  whatsapp: "",
 };
 export const services = [
   { id: "multi-colour", title: "Multi-Colour Powder Coating", text: "Powder coating in a choice of colours for metal parts and fabrications, applied for an even, durable finish. [Edit: confirm colour range and part sizes.]" },
@@ -32,15 +32,4 @@ export const photos = [
   { src: "/photos/facility-side.jpg", w: 720, h: 1280, alt: "Side view of the Quality Enterprises shed and yard", caption: "Workshop shed and yard", cat: "Facility" },
   { src: "/photos/sign-closeup.jpg", w: 720, h: 1280, alt: "Quality Enterprises signboard close-up", caption: "Company signboard", cat: "Signage" },
   { src: "/photos/sign-wide.jpg", w: 720, h: 1280, alt: "Quality Enterprises signboard on the factory wall", caption: "Signboard on the factory wall", cat: "Signage" },
-];
-
-const waMessage = "Hello Quality Enterprises, I am interested in your products and services. Please share more details.";
-export const waUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(waMessage)}`;
-export const callUrl = `tel:+${site.whatsapp}`;
-// Add your own photos to public/images/gallery/ using these exact filenames. Missing files are skipped automatically.
-export const workItems = [
-  { file: "yellow-components.jpg", alt: "Yellow powder-coated industrial components", caption: "Yellow powder-coated components" },
-  { file: "red-components.jpg", alt: "Red painted metal boxes and components", caption: "Red painted metal boxes and components" },
-  { file: "orange-components.jpg", alt: "Orange powder-coated industrial components", caption: "Orange powder-coated components" },
-  { file: "green-components.jpg", alt: "Green and yellow industrial components", caption: "Green and yellow industrial components" },
 ];
